@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@*@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -17,23 +18,18 @@
         <th>İletişim Detay</th>
 
     </tr>
-
-
-    <tr>
-        <th></th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><a href="#" class="btn btn-danger">Sil</a></td>
-        <td><a href="#" class="btn btn-warning">Güncelle</a></td>
-        
-        <td><a href="#" class="btn btn-dark">İletişim Detay</a></td>
-    </tr>
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.PersonId</th>
+            <td><a href="#" class="btn btn-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="#" class="btn btn-dark">İletişim Detay</a></td>
+        </tr>
+    }
 </table>
 
 <td><a href="#" class="btn btn-success">Yeni Kişi Ekle</a></td>
-<td><a href="#" class="btn btn-primary">Kişileri Listele</a></td>
+<td><a href="#" class="btn btn-primary">Kişileri Listele</a></td>*@
 
 

@@ -18,16 +18,6 @@ namespace BusinessLayer.Concrete
             _personDal = personDal;
         }
 
-        public void Add(Person person)
-        {
-            _personDal.Insert(person);
-        }
-
-        public void Delete(Person person)
-        {
-            _personDal.Delete(person);
-        }
-
         public Person GetByID(int id)
         {
             return _personDal.GetByID(id);
@@ -38,9 +28,19 @@ namespace BusinessLayer.Concrete
             return _personDal.GetListAll();
         }
 
-        public void Update(Person person)
+        public void TAdd(Person t)
         {
-            _personDal.Update(person);
+           _personDal.Insert(t);
+        }
+
+        public void TDelete(Person t)
+        {
+           _personDal.Delete(t);
+        }
+
+        public void TUpdate(Person t)
+        {
+            _personDal.Update(t);
         }
     }
 }

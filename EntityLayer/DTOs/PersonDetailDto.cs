@@ -1,20 +1,18 @@
-﻿using EntityLayer.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLayer.Concrete
+namespace EntityLayer.DTOs
 {
-    public class Person : IEntity
+    public class PersonDetailDto
     {
-        [Key]
         public int PersonId { get; set; }
+
         public string PersonName { get; set; }
         public string PersonSurName { get; set; }
-        public string CompanyName { get; set; }
-
-        }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
     }
+}

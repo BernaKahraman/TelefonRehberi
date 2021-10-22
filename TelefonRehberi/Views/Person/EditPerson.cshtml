@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Concrete.Person
+@{
+    ViewData["Title"] = "EditPerson";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h2>Kişi Güncelleme Sayfası</h2>
+@using (Html.BeginForm("EditPerson", "Person", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kişi ID")
+    @Html.TextBoxFor(x => x.PersonId, new { @class = "form-control" })
+    <br />
+    @Html.Label("Adı:")
+    @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Soyadı:")
+    @Html.TextAreaFor(x => x.PersonSurName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Firma:")
+    @Html.TextAreaFor(x => x.CompanyName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+</div>
+}
+
