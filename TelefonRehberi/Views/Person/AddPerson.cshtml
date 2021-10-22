@@ -18,11 +18,15 @@
     @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
     <br />
     @Html.Label("Firma")
-    @Html.TextBoxFor(x => x.PersonSurName, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
     @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
     <br />
     @Html.Label("Telefon Numarası")
-    @Html.TextBoxFor(x => x.PersonSurName, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+    @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
+    <br />
+    @Html.Label("Mail Adresi")
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
     @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
     <br />
     <button class="btn btn-outline-primary" id="buton">Kişi Ekle</button>

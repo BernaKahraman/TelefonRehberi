@@ -10,5 +10,6 @@ namespace BusinessLayer.Abstract
     public interface IPersonService : IGenericService<Person>
     {
 
+
     }
 }

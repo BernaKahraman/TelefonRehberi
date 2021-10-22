@@ -28,14 +28,15 @@ namespace BusinessLayer.Concrete
             return _personDal.GetListAll();
         }
 
+
         public void TAdd(Person t)
         {
-           _personDal.Insert(t);
+            _personDal.Insert(t);
         }
 
         public void TDelete(Person t)
         {
-           _personDal.Delete(t);
+            _personDal.Delete(t);
         }
 
         public void TUpdate(Person t)

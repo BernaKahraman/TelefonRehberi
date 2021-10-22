@@ -1,0 +1,33 @@
+﻿@using EntityLayer.Concrete
+@model List<Person>
+@{
+    ViewData["Title"] = "PersonContactDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>İletişim Detayları</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Firma</th>
+        <th>Telefon Numarası</th>
+        <th>Mail Adresi</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.PersonId</td>
+            <td>@item.PersonName</td>
+            <td>@item.PersonSurName</td>
+            <td>@item.CompanyName</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Email</td>
+        </tr>
+    }
+</table>
+<td><a href="#" class="btn btn-warning">Yeni İletişim Bilgisi Ekle</a></td>
+

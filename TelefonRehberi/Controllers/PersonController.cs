@@ -50,7 +50,11 @@ namespace TelefonRehberi.Controllers
             pm.TUpdate(p);
             return RedirectToAction("Index");
         }
-
+        public IActionResult PersonContactDetails()
+        {
+            var values = pm.GetList();
+            return View(values);
+        }
 
     }
 }

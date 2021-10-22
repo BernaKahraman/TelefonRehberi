@@ -16,10 +16,16 @@
     @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control" })
     <br />
     @Html.Label("Soyadı:")
-    @Html.TextAreaFor(x => x.PersonSurName, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.PersonSurName, new { @class = "form-control" })
     <br />
     @Html.Label("Firma:")
-    @Html.TextAreaFor(x => x.CompanyName, new { @class = "form-control" })
+    @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Telefon Numarası:")
+    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+    <br /> 
+    @Html.Label("Mail Adresi:")
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
     <br />
     <button class="btn btn-success">Güncelle</button>
 </div>

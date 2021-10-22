@@ -7,6 +7,8 @@
 
 <br />
 <h3>Telefon Rehberi Uygulaması</h3>
+<td><a href="/Person/AddPerson/" class="btn btn-success">Yeni Kişi Ekle</a></td>
+<br />
 <br />
 <table class="table table-bordered">
     <tr>
@@ -14,7 +16,7 @@
         <th>Ad</th>
         <th>Soyad</th>
         <th>Firma</th>
-        <th>İletişim</th>
+        <th>Telefon Numarası</th>
         <th>Sil</th>
         <th>Güncelle</th>
         <th>İletişim Detay</th>
@@ -27,15 +29,15 @@
             <td>@item.PersonName</td>
             <td>@item.PersonSurName</td>
             <td>@item.CompanyName</td>
-            <td></td>
+            <td>@item.PhoneNumber</td>
             <td><a href="/Person/DeletePerson/@item.PersonId" class="btn btn-danger">Sil</a></td>
             <td><a href="/Person/EditPerson/@item.PersonId" class="btn btn-warning">Güncelle</a></td>
 
-            <td><a href="#" class="btn btn-dark">İletişim Detay</a></td>
+            <td><a href="/Person/PersonContactDetails/" class="btn btn-dark">İletişim Detay</a></td>
         </tr>
     }
 </table>
 
-<td><a href="/Person/AddPerson/" class="btn btn-success">Yeni Kişi Ekle</a></td>
+
 
 

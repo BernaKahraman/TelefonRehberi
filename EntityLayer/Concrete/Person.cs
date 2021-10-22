@@ -14,6 +14,8 @@ namespace EntityLayer.Concrete
         public int PersonId { get; set; }
         public string PersonName { get; set; }
         public string PersonSurName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
         public string CompanyName { get; set; }
 
         }

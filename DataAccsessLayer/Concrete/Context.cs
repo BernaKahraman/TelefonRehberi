@@ -15,7 +15,7 @@ namespace DataAccsessLayer.Concrete
             optionsBuilder.UseSqlServer("server=LAPTOP-S95JB6JC\\SQLEXPRESS01;database=TelephoneDirectoryDb; integrated security=true;");
         }
         public DbSet<Person> Persons { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
+        
 
     }
 }
