@@ -9,8 +9,7 @@
 @using (Html.BeginForm("EditPerson", "Person", FormMethod.Post))
 {
 <div class="form-group">
-    @Html.Label("Kişi ID")
-    @Html.TextBoxFor(x => x.PersonId, new { @class = "form-control" })
+    @Html.HiddenFor(x => x.PersonId, new { @class = "form-control" })
     <br />
     @Html.Label("Adı:")
     @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control" })
