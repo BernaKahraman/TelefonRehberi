@@ -11,28 +11,27 @@
 <div class="form-group">
     @Html.Label("Kişi Adı")
     @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control" })
-    @*@Html.ValidationMessageFor(x => x.PersonName)*@
+   
     <br />
     @Html.Label("Kişi Soyadı")
     @Html.TextBoxFor(x => x.PersonSurName, new { @class = "form-control" })
-    @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
+    
     <br />
     @Html.Label("Firma")
     @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
-    @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
+   
     <br />
     @Html.Label("Telefon Numarası")
     @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
-    @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
+   
     <br />
     @Html.Label("Mail Adresi")
     @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
-    @*@Html.ValidationMessageFor(x => x.PersonSurName)*@
+    
     <br />
     <button class="btn btn-outline-primary" id="buton">Kişi Ekle</button>
 </div>
     <script src="/lib/bootstrap/dist/css/bootstrap.css"></script>
-    @*<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />*@
 }
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="~/Scripts/jquery-3.4.1.js"></script>
