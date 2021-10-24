@@ -9,5 +9,10 @@
   <li>Rehberdeki kişiye iletişim bilgisi ekleme</li>
  </ul>
  
- ![SQL](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/Listeleme.PNG)
+ ![Listeleme](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/Listeleme.PNG)
+ ![Sql](hhttps://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/Sql%20Tablo.PNG)
+ ![Sql](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/Sql%20Tablo2.PNG)
+ ![Güncelleme Sayfası](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/g%C3%BCncelleme.PNG)
+ ![Detaylar](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/ileti%C5%9Fim%20detaylar%C4%B1.PNG)
+ ![Kişi Ekle](https://github.com/BernaKahraman/TelefonRehberi/blob/master/%C4%B0mages/yeni%20ki%C5%9Fi%20ekle.PNG)
  
